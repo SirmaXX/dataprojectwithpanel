@@ -1,0 +1,22 @@
+<?php
+ 
+// index.php sayfasý
+ 
+session_start();
+ 
+if($_SESSION["kullaniciadi"] == "admin" && $_SESSION["kullanicisifresi"] == "admin123")	
+{
+ 
+echo "Hoþ Geldiniz Sayýn ".$_SESSION["kullaniciadi"]."<br><br>
+";
+header("location: index.php");	
+}
+else
+{
+ 
+
+header("location: giris.php");	
+ 
+}
+ 
+?>

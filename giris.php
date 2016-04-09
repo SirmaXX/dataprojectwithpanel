@@ -10,7 +10,7 @@ if(isset($_POST["girisbuton"]))
 	$_SESSION["kullaniciadi"] = $_POST["kadi"];
 	$_SESSION["kullanicisifresi"] = $_POST["sifre"];
 	
-	header('location: index.php');	
+	header('location: kontrol.php');	
 }
 
 ?>
