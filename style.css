@@ -1,11 +1,25 @@
-body{background-image:url(build/food.jpg)}
+body{background-image:url(build/sayagata.png)}
 
 
 /*giris ekranı css */
 .giris{width:75%;height:3em;border-radius:5px;margin-top:2em;}
-.girisekran{border-radius:5px;background-color: burlywood; width: 25em;height:30em; padding-top:1em;}
+.girisekran{border-radius:5px;background-color:#202020; width: 25em;height:30em; padding-top:1em;}
 #loginbtn{margin-top:2em;}
+#grsbas{color:white;}
 
+
+
+
+
+
+.duzenleme{border-radius:5px;background-color: burlywood; width: 40em;height:40em; padding-top:1em;}
+#duzenbtn{margin-top:em;}
+
+
+
+
+
+.giriss{width:75%;height:3em;border-radius:5px;margin-top:2em;}
 
 
 /*giris ekranı css bitis */
@@ -145,4 +159,11 @@ body{background-image:url(build/food.jpg)}
         position: relative;
         margin-right: 0;
     }
+}
+
+
+.duyuru{ border-radius:5px; border-color:black;
+
+
+
 }

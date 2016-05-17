@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "123456";
-$db ="yemekhane";
+$servername = "sql204.byethost3.com";
+$username = "b3_17827930";
+$password = "sence26es";
+$db ="b3_17827930_yemekhane";
 // Create connection
 $baglan = mysqli_connect($servername, $username, $password,$db);
 
@@ -14,19 +14,6 @@ if (!$baglan) {
 
 
 
-function yonlendir($adres,$zaman=0)
-{
-
-if ($zaman) {header("Refresh:$zaman ,url=$zaman ");
-	# code...
-}
-else{
-
-
-	header("Location:$adres");
-
-}
-}
 
 
 ?>

@@ -16,7 +16,7 @@ if($_POST){
 	$sorgu = $baglan->query($sql);
 	if ($sorgu) {
 		echo "oldu la";
-		yonlendir("index.php");
+		header("index.php");
 	}else{echo "olmadı";}
 
 
@@ -51,8 +51,7 @@ $sorgu =$baglan->query($sql);
     <title>H.A.Y.A.L</title>
 
     <link href="./Dashboard Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
-
-    <link href="./Dashboard Template for Bootstrap_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
     <link href="./Dashboard Template for Bootstrap_files/dashboard.css" rel="stylesheet">
 
@@ -99,7 +98,6 @@ $sorgu =$baglan->query($sql);
       </li>
 </a>
       </li>
-            <li><a href="#">Profile</a></li>
             <li><a href="#">Çıkış</a></li>
           </ul>
           
@@ -108,17 +106,51 @@ $sorgu =$baglan->query($sql);
     </nav>
  <!-- üst menu bitis -->
  <center>
+<div class="container  duzenleme">
+  <h2>Düzenleme formu </h2>
+  <form class="form-horizontal" role="form"  action="" method="POST">
+	  
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="date">TARİH:</label>
+      <div class="col-sm-10">
+        <input type="date"   name="tarih" class="form-control" >
+      </div> 
+    </div>
+	  
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">ANAYEMEK:</label>
+      <div class="col-sm-10">          
+        <input type="text"  name="anayemek" class="form-control" >
+      </div>
+    </div>
+	  
+	   <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">ÇORBA:</label>
+      <div class="col-sm-10">          
+        <input type="text" name="corba" class="form-control"  >
+      </div>
+    </div>
+	   <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">TATLI:</label>
+      <div class="col-sm-10">          
+        <input type="text" name="tatli" class="form-control" >
+      </div>
+    </div>
+	   <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">İÇECEK:</label>
+      <div class="col-sm-10">          
+        <input type="text" name="icecek" class="form-control"  >
+      </div>
+    </div>
+  
+    <div class="form-group">        
+       <div id="loginbtn">
+<input type="submit" value="Güncelle" class="btn btn-primary btn-lg" id="duzenbtn">
+		     </div>
+    </div>
+  </form>
+</div>
 
-  
-  
- <form action="" method="POST">
-<input type="date" name="tarih" value="<?= $yazdir['tarih']?>"  />
-<input type="text" name="anayemek" value="<?php echo  $yazdir['anayemek'];?>"  />
-<input type="text" name="corba" value="<?php echo  $yazdir['corba'] ;?>"  />
-<input type="text" name="tatli" value="<?php echo  $yazdir['tatli'] ;?>"  />
-<input type="text" name="icecek" value="<?php echo  $yazdir['icecek'] ;?>"  />
-<input type="submit" value="Güncelle">
-</form>
 
   
   </center>

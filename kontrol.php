@@ -14,7 +14,6 @@ header("location: index.php");
 else
 {
  
-
 header("location: giris.php");	
  
 }

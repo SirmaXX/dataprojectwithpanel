@@ -1,18 +1,14 @@
 
 <?php 
 // giris.php sayfası
-
 session_start();
-
 if(isset($_POST["girisbuton"]))
 {
-
-	$_SESSION["kullaniciadi"] = $_POST["kadi"];
-	$_SESSION["kullanicisifresi"] = $_POST["sifre"];
-	
-	header('location: kontrol.php');	
+  $_SESSION["kullaniciadi"] = $_POST["kadi"];
+  $_SESSION["kullanicisifresi"] = $_POST["sifre"];
+  
+  header('location: kontrol.php');  
 }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +24,7 @@ if(isset($_POST["girisbuton"]))
   
 <div class="col-md-12 col-xs-12 col-lg-12 girisekran">
  <form name="kullanicigirisi" method="post" action="">
-    <h1>Yönetici PANELİ </h1>
+   <h1 id="grsbas">Yönetici PANELİ </h1>
   <input type="text" class="giris" placeholder="Kullanıcı Adı" id="kadi" name="kadi">
   <input type="password" class="giris" placeholder="şifre" id="sifre"  name="sifre">
   <br>
@@ -45,6 +41,7 @@ if(isset($_POST["girisbuton"]))
   </form>
 
   </div>
+  
   
   </center>
   </body>
