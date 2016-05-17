@@ -1,13 +1,8 @@
 # dataprojectwithpanel
 proje
-
-
-Okul için yaptığım basit bir proje :D 
-
-
-http://dbsirmax.blogspot.com.tr/
-
+Okul için yaptığım  basit fuar projesi 
+http://hayalyemekhane.byethost3.com/ogrenci.php
 burada ana mantığı anlatıcam 
+php,mysqli ve bootstrap kullandım.
 
-
-php,mysqli ve jquery kullanıldı
+Android apk kısmında webview üzerinden veri çekiyor 
