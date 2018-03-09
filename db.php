@@ -1,8 +1,8 @@
 <?php
-$servername = "sql204.byethost3.com";
-$username = "b3_17827930";
-$password = "sence26es";
-$db ="b3_17827930_yemekhane";
+$servername = ";
+$username = "";
+$password = "";
+$db ="";
 // Create connection
 $baglan = mysqli_connect($servername, $username, $password,$db);
 
